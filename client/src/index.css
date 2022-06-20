@@ -694,7 +694,9 @@ footer {
 
 /* Landing */
 .special-banner {
-  padding: 0 !important;
+  padding: 1rem !important;
+  margin-left: 0.8rem;
+  height: 100%;
   background-image: linear-gradient(to bottom right, #ff598f, #fd8a5e, #e0e300);
 }
 

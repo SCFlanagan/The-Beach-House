@@ -31,8 +31,8 @@ function PromoBanner() {
           ))}
         </h3>
         <Row className="fill-space banner-content">
-          <Col md={3} xs={2}></Col>
-          <Col md={6} xs={8} className="special-banner flex-center">
+          <Col md={3} xs={12}></Col>
+          <Col md={6} xs={12} className="special-banner flex-center">
             <div className="center-text inner-card">
               <h1 className="banner-text">20% OFF</h1>
               <h4 className="banner-subtext">
@@ -42,7 +42,7 @@ function PromoBanner() {
               </h4>
             </div>
           </Col>
-          <Col md={3} xs={2}></Col>
+          <Col md={3} xs={12}></Col>
         </Row>
       </div>
     </div>
