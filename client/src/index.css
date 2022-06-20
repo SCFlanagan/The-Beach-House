@@ -136,11 +136,20 @@ footer {
 }
 
 /*  Loader */
+
+.spinner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #loading-spinner {
   height: 100px;
   width: 100px;
   position: absolute;
-  left: 45%;
+  left: calc(50%-100px);
   top: 45%;
   display: "block";
   border-width: 1rem;
@@ -160,8 +169,44 @@ footer {
   14% {
     color: #e0e300;
   }
+  21% {
+    color: #ff598f;
+  }
+  28% {
+    color: #fd8a5e;
+  }
+  35% {
+    color: #e0e300;
+  }
+  42% {
+    color: #ff598f;
+  }
+  49% {
+    color: #fd8a5e;
+  }
   50% {
     transform: rotate(180deg);
+  }
+  56% {
+    color: #e0e300;
+  }
+  63% {
+    color: #ff598f;
+  }
+  70% {
+    color: #fd8a5e;
+  }
+  77% {
+    color: #e0e300;
+  }
+  84% {
+    color: #ff598f;
+  }
+  91% {
+    color: #fd8a5e;
+  }
+  98% {
+    color: #e0e300;
   }
   100% {
     transform: rotate(360deg);
