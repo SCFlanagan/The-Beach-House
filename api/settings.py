@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thebeachhouse.herokuapp.com']
 
@@ -191,5 +191,5 @@ AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'thebeachhouse-bucket'
 AWS_QUERYSTRING_AUTH = False
 
-if os.getcwd() == '/app':
-    DEBUG = False
+#if os.getcwd() == '/app':
+#    DEBUG = False
