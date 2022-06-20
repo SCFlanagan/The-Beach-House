@@ -193,3 +193,7 @@ AWS_QUERYSTRING_AUTH = False
 
 #if os.getcwd() == '/app':
 #    DEBUG = False
+
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
+
