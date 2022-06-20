@@ -12,7 +12,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = False
+DEBUG = True
+
+if os.getcwd() == '/app':
+    DEBUG = False
+
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thebeachhouse.herokuapp.com']
 
@@ -81,10 +85,9 @@ SIMPLE_JWT = {
 }
 
 MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -190,10 +193,3 @@ AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'thebeachhouse-bucket'
 AWS_QUERYSTRING_AUTH = False
-
-#if os.getcwd() == '/app':
-#    DEBUG = False
-
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
-mimetypes.add_type("text/html", "html", True)
