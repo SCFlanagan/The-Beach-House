@@ -34,11 +34,13 @@ function ProductListContainer({ category }) {
           {error}
         </Message>
       ) : (
-        <ProductsList
-          products={products}
-          category={category}
-          key={Date.now()}
-        />
+        <div>
+          <ProductsList
+            products={products}
+            category={category}
+            key={Date.now()}
+          />
+        </div>
       )}
     </div>
   );
