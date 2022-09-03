@@ -36,9 +36,8 @@ function PromoBanner() {
             <div className="center-text inner-card">
               <h1 className="banner-text">20% OFF</h1>
               <h4 className="banner-subtext">
-                USE PROMO CODE{" "}
-                <span style={{ fontSize: "1.3em" }}>'SUMMER20'</span> AT
-                CHECKOUT
+                USE PROMO CODE <span className="banner-code">'SUMMER20'</span>{" "}
+                AT CHECKOUT
               </h4>
             </div>
           </Col>

@@ -9,38 +9,42 @@ function Landing() {
     {
       category: "Sunglasses",
       image:
-        "https://thebeachhouse-bucket.s3.amazonaws.com/ombreroundsunglasses.png",
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/ombreroundsunglasses.png",
     },
     {
       category: "Towels",
       image:
-        "https://thebeachhouse-bucket.s3.amazonaws.com/candystripetowel.webp",
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/candystripetowel.webp",
     },
     {
       category: "Blankets",
       image:
-        "https://thebeachhouse-bucket.s3.amazonaws.com/redwhiteplaidblanket.jpeg",
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/redwhiteplaidblanket.jpeg",
     },
     {
       category: "Umbrellas",
       image:
-        "https://thebeachhouse-bucket.s3.amazonaws.com/classiccoralumbrella.png",
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/classiccoralumbrella.png",
     },
     {
       category: "Surfboards",
-      image: "https://thebeachhouse-bucket.s3.amazonaws.com/oahusufboard.jpeg",
+      image:
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/oahusufboard.jpeg",
     },
     {
       category: "Floats",
-      image: "https://thebeachhouse-bucket.s3.amazonaws.com/loungefloat.png",
+      image:
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/loungefloat.png",
     },
     {
       category: "Games",
-      image: "https://thebeachhouse-bucket.s3.amazonaws.com/retrocornhole.png",
+      image:
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/retrocornhole.png",
     },
     {
       category: "Sale",
-      image: "https://thebeachhouse-bucket.s3.amazonaws.com/rainbowfloat.png",
+      image:
+        "https://thebeachhouse-photo-bucket.s3.amazonaws.com/rainbowfloat.png",
     },
   ];
 

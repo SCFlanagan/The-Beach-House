@@ -750,7 +750,12 @@ footer {
 }
 
 .banner-subtext {
+  color: white;
   font-size: 1.7vw;
+}
+
+.banner-code {
+  font-size: 1.3em;
 }
 
 .banner-logo {

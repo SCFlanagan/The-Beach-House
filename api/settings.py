@@ -18,7 +18,7 @@ if os.getcwd() == '/app':
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thebeachhouse.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'thebeachhouse.herokuapp.com']
 
 
 # Application definition
@@ -123,10 +123,10 @@ WSGI_APPLICATION = 'api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'thebeachhouse',
-        'USER': 'susancf',
-        'PASSWORD': env('POSTGRES_PASSWORD'),
-        'HOST': env('POSTGRES_HOST'),
+        'NAME': env('DATABASE_NAME'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASSWORD'),
+        'HOST': env('DATABASE_HOST'),
         'PORT': '5432'
     }
 }
@@ -189,7 +189,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
+AWS_QUERYSTRING_AUTH = False
 AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = 'thebeachhouse-bucket'
-AWS_QUERYSTRING_AUTH = False
+AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME')
