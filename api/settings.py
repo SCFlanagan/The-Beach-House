@@ -18,7 +18,7 @@ if os.getcwd() == '/app':
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['localhost', 'thebeachhouse.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thebeachhouse.herokuapp.com']
 
 
 # Application definition
