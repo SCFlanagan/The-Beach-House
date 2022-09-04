@@ -20,6 +20,7 @@ if os.getcwd() == '/app':
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thebeachhouse.herokuapp.com']
 
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 # Application definition
 
