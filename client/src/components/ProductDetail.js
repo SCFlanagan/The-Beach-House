@@ -216,7 +216,7 @@ function ProductDetail() {
                 </ListGroup.Item>
 
                 <ListGroup.Item>
-                  <p>{product.description}</p>
+                  <p className="detail-padding mb-0">{product.description}</p>
 
                   <div className="flex-column">
                     {product.colors
